@@ -1,7 +1,7 @@
 ## ffmpeg로 실시간 영상 다운받기
 1. ffmpeg codec 설정하여 영상 저장(별도 변환 필요 없음)
 ```bash
-ffmpeg -rtsp_transport tcp -i rtsp://admin:best4660%21@192.168.1.128:554/media/1/1Profile1 -vcodec libx264 -acodec aac -c copy test_2.mp4
+ffmpeg -rtsp_transport tcp -i {rtsp://url} -vcodec libx264 -acodec aac -c copy {output_path/output.mp4}
 ```
 ## extract_clips.py를 이용하여 Clip 변환 자동화
 1. 원본영상에서 추출할 clip의 시간 정보를 기록한 csv 파일을 준비
